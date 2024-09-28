@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Buku Tamu</title>
+</head>
+<body>
+    <h1>Form Buku Tamu</h1>
+    <form action="/submit" method="post">
+        <div>
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama" required><br><br>
+        </div>
+
+        <div>
+            <label>Jenis Kelamin:</label><br>
+            <label for="laki_laki">Laki-laki</label>
+            <input type="radio" id="laki_laki" name="jenis_kelamin" value="Laki-laki">
+            <label for="perempuan">Perempuan</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan"><br>
+        </div>
+        <br>
+
+        <div>
+            <label for="alamat">Alamat:</label><br>
+            <input type="text" id="alamat" name="alamat" required><br><br>
+        </div>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        </div>
+
+        <div>
+            <p>Aktif Pada Sosial Media:</p>
+            <input type="checkbox" id="facebook" name="sosial" value="facebook">
+            <label for="facebok">Facebook</label>
+
+            <input type="checkbox" id="twitter" name="sosial" value="twitter">
+            <label for="twitter">Twitter</label>
+
+            <input type="checkbox" id="instagram" name="sosial" value="instagram">
+            <label for="instagram">Instagram</label>
+
+            <input type="checkbox" id="line" name="sosial" value="line">
+            <label for="line">Line</label>
+
+            <input type="checkbox" id="path" name="sosial" value="path">
+            <label for="path">Path</label>
+
+        </div>
+        <br>
+
+
+        <div>
+            <label for="mengetahui_web">Mengetahui Web ini dari:</label><br>
+            <select id="mengetahui_web" name="mengetahui_web">
+                <option value="">Pilih Salah Satu</option>
+                <option value="teman">Teman</option>
+                <option value="iklan">Iklan</option>
+                <option value="media_sosial">Media Sosial</option>
+                <option value="lainnya">Lainnya</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" required></textarea><br><br>
+        </div>
+
+        <div>
+            <input type="submit" value="Kirim">
+            <button type="button" onclick="window.history.back()">Batal</button>
+        </div>
+    </form>
+
+    <p><a href="About.html">Tentang Kami</a></p>
+</body>
+</html>
